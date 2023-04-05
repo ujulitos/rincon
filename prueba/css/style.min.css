@@ -261,9 +261,9 @@ a {
     right: 0;
     left: 0;
     z-index: 11;
-    transition: opacity .3s ease-in-out;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
+    /* transition: all.3s ease; */
 }
 
 .navbar-brand {
@@ -290,6 +290,13 @@ a {
     color: #fff;
 }
 
+.navbar-nav span {
+    color: #fff;
+    opacity: 0.3;
+    font-size: 22px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
 
 
 .not-on-top #gtco-header-navbar {
@@ -300,15 +307,47 @@ a {
     right: 0;
     padding-left: 10px;
     padding-right: 10px;
-    background-color: #fff;
+    /* background-color: #fff; */
     /* navbar */
     background: -webkit-linear-gradient(to right, #bdceed, #9675b5);
     background: linear-gradient(to right, #bdceed, #9675b5);
     box-shadow: rgba(0, 0, 0, 0.05) 0px 3px 15px 0px;
     border-radius: 0;
-    opacity: 1;
 
+    animation: aparece_nav 0.3s ease;
 }
+
+/* .navbar-transparent #gtco-header-navbar {
+    animation: desaparece_nav 0.3s ease;
+} */
+
+@keyframes aparece_nav {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes desaparece_nav {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+
+
+/* .not-on-top #gtco-header-navbar:hover::before {
+    background: -webkit-linear-gradient(to right, #bdceed, #9675b5);
+    background: linear-gradient(to right, #bdceed, #9675b5);
+  
+} */
 
 
 /* .jumbotron_fondo {
@@ -803,7 +842,7 @@ footer {
 
     #gtco-header-navbar {
         padding-left: 15px;
-        background-color: #fff;
+        /* background-color: #fff; */
         /* navbar */
         background: -webkit-linear-gradient(to right, #bdceed, #9675b5);
         background: linear-gradient(to right, #bdceed, #9675b5);
@@ -814,6 +853,10 @@ footer {
         text-align: center;
         font-size: 150%;
         font-weight: 300;
+    }
+
+    .navbar-nav span {
+        display: none;
     }
 }
 
