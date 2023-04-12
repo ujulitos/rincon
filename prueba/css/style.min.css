@@ -1,7 +1,11 @@
-/*
- * Moon by GetTemplates.co
- * URL: https://gettemplates.co
- */
+:root {
+    --color0: #fff;
+    --color1: #efa8b0;
+    --color2: #a89cc8;
+    --color3: #8cc9f0;
+    --color4: #8CBB8E;
+}
+
 html {
     font-size: 62.5%;
     overflow-x: hidden;
@@ -122,6 +126,7 @@ p {
 .btn {
     font-size: 1.6rem;
     padding: .7rem 1rem;
+    border-radius: 10px;
 }
 
 img {
@@ -152,6 +157,11 @@ a:hover {
 .section-content {
     padding-top: 80px;
     padding-bottom: 80px;
+}
+
+.section-footer {
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 .title-wrap,
@@ -217,6 +227,182 @@ a {
     margin-right: auto;
 }
 
+.texto_fondo {
+    background: linear-gradient(to right, #fff7f200, #fff7f2a8, #fff7f200);
+    margin-top: -100px;
+    padding: 20px;
+}
+
+.icono_color0 {
+    font-variation-settings:
+        'FILL'0,
+        'wght'200,
+        'GRAD'0,
+        'opsz'48;
+    color: var(--color0);
+    font-size: 35px;
+}
+
+.icono_chico_fill_color1 {
+    font-variation-settings:
+        'FILL'1,
+        'wght'500,
+        'GRAD'0,
+        'opsz'48;
+    color: var(--color1);
+    font-size: 20px;
+}
+
+.icono_chico_fill_color2 {
+    font-variation-settings:
+        'FILL'1,
+        'wght'500,
+        'GRAD'0,
+        'opsz'48;
+    color: var(--color2);
+    font-size: 20px;
+}
+
+.icono_chico_fill_color3 {
+    font-variation-settings:
+        'FILL'1,
+        'wght'500,
+        'GRAD'0,
+        'opsz'48;
+    color: var(--color3);
+    font-size: 20px;
+}
+
+.icono_chico_fill_color4 {
+    font-variation-settings:
+        'FILL'1,
+        'wght'500,
+        'GRAD'0,
+        'opsz'48;
+    color: var(--color4);
+    font-size: 20px;
+}
+
+.icono_grande_color0 {
+    font-variation-settings:
+        'FILL'0,
+        'wght'200,
+        'GRAD'0,
+        'opsz'48;
+    color: var(--color0);
+    font-size: 70px;
+}
+
+.icono_grande_fill_color1 {
+    font-variation-settings:
+        'FILL'1,
+        'wght'500,
+        'GRAD'0,
+        'opsz'48;
+    color: var(--color1);
+    font-size: 70px;
+}
+
+.icono_grande_fill_color2 {
+    font-variation-settings:
+        'FILL'1,
+        'wght'500,
+        'GRAD'0,
+        'opsz'48;
+    color: var(--color2);
+    font-size: 70px;
+}
+
+.icono_grande_fill_color3 {
+    font-variation-settings:
+        'FILL'1,
+        'wght'500,
+        'GRAD'0,
+        'opsz'48;
+    color: var(--color3);
+    font-size: 70px;
+}
+
+.icono_grande_fill_color4 {
+    font-variation-settings:
+        'FILL'1,
+        'wght'500,
+        'GRAD'0,
+        'opsz'48;
+    color: var(--color4);
+    font-size: 70px;
+}
+
+
+.icono_med_color0 {
+    font-variation-settings:
+        'FILL'0,
+        'wght'200,
+        'GRAD'0,
+        'opsz'48;
+    color: var(--color0);
+    font-size: 40px;
+}
+
+.icono_med_fill_color1 {
+    font-variation-settings:
+        'FILL'1,
+        'wght'500,
+        'GRAD'0,
+        'opsz'48;
+    color: var(--color1);
+    font-size: 40px;
+}
+
+.icono_med_fill_color2 {
+    font-variation-settings:
+        'FILL'1,
+        'wght'500,
+        'GRAD'0,
+        'opsz'48;
+    color: var(--color2);
+    font-size: 40px;
+}
+
+.icono_med_fill_color3 {
+    font-variation-settings:
+        'FILL'1,
+        'wght'500,
+        'GRAD'0,
+        'opsz'48;
+    color: var(--color3);
+    font-size: 40px;
+}
+
+.icono_med_fill_color4 {
+    font-variation-settings:
+        'FILL'1,
+        'wght'500,
+        'GRAD'0,
+        'opsz'48;
+    color: var(--color4);
+    font-size: 40px;
+}
+
+.color0 {
+    color: var(--color0);
+}
+
+.color1 {
+    color: var(--color1);
+}
+
+.color2 {
+    color: var(--color2);
+}
+
+.color3 {
+    color: var(--color3);
+}
+
+.color4 {
+    color: var(--color4);
+}
 
 /* mios */
 
@@ -251,6 +437,12 @@ a {
 
 .btn-red {
     background-color: #FC665F !important;
+    color: #fff !important;
+    border: none !important;
+}
+
+.btn-green {
+    background-color: var(--color4) !important;
     color: #fff !important;
     border: none !important;
 }
@@ -369,6 +561,7 @@ a {
 
 .jumbotron {
     background-color: #fff;
+    background-image: url(../img/hero.jpg);
     padding-top: 80px;
     padding-bottom: 80px;
     background-repeat: no-repeat;
@@ -397,8 +590,8 @@ a {
     position: absolute;
     display: block;
     content: "";
-    background-color: rgba(255, 255, 255, 0.3);
-    opacity: 0.8;
+    background-color: #d16573;
+    opacity: 0.2;
     top: 0;
     bottom: 0;
     left: 0;
@@ -468,11 +661,6 @@ a {
     transform: translate(-50%, -50%);
     opacity: 0;
     transition: all .3s ease;
-}
-
-.lightcase-icon-close:before {
-    content: '\e870';
-    font-family: "Linearicons-Free";
 }
 
 .grid-title {
