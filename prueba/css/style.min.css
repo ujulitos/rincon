@@ -243,6 +243,16 @@ a {
     font-size: 35px;
 }
 
+.icono_grande_color0 {
+    font-variation-settings:
+        'FILL'0,
+        'wght'200,
+        'GRAD'0,
+        'opsz'48;
+    color: var(--color0);
+    font-size: 70px;
+}
+
 .icono_chico_fill_color1 {
     font-variation-settings:
         'FILL'1,
@@ -283,10 +293,11 @@ a {
     font-size: 20px;
 }
 
-.icono_grande_color0 {
+
+.icono_grande_fill_color0 {
     font-variation-settings:
-        'FILL'0,
-        'wght'200,
+        'FILL'1,
+        'wght'500,
         'GRAD'0,
         'opsz'48;
     color: var(--color0);
@@ -404,6 +415,14 @@ a {
     color: var(--color4);
 }
 
+.img_med {
+    width: 100%;
+}
+
+.img_ch {
+    width: 50%;
+}
+
 /* mios */
 
 /* Custom default button */
@@ -437,6 +456,12 @@ a {
 
 .btn-red {
     background-color: #FC665F !important;
+    color: #fff !important;
+    border: none !important;
+}
+
+.btn-color1 {
+    background-color: var(--color1) !important;
     color: #fff !important;
     border: none !important;
 }
@@ -749,7 +774,7 @@ a {
     height: 101%;
     padding: 6em 3em;
     top: 0;
-    width: 28em;
+    /* width: 28em; */
 }
 
 .spotlight.left .content {
@@ -815,6 +840,16 @@ a {
 }
 
 
+.spotlight .content {
+    color: #fff;
+    width: 50%;
+}
+
+.spotlight.style2.right,
+.spotlight.style3.left {
+    background-image: url(../img/img01.jpg);
+    background-position: center 50px;
+}
 
 
 
@@ -823,8 +858,13 @@ a {
 .blog-item {
     transition: all 0.3s ease-in-out;
     background-color: #f7f8f9;
-    border-radius: 3px;
     overflow: hidden;
+    border-radius: 0px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+
+    /* border: 5px solid #f7f8f9; */
+    /* min-width: 100px; */
 }
 
 .blog-item:hover {
@@ -1018,6 +1058,7 @@ footer {
     .not-on-top #gtco-header-navbar {
         margin-right: 30px;
         margin-left: 30px;
+        max-width: 100%;
     }
 }
 
@@ -1078,4 +1119,27 @@ footer {
     .card-deck {
         flex-direction: column;
     }
+
+    .spotlight .content {
+        background: rgba(23, 24, 32, 0.7);
+        width: 100%;
+        border: transparent;
+
+        /* color: #212529; */
+    }
+
+    .texto_fondo {
+        margin-top: -30px;
+        padding: 20px;
+    }
+
+    .img_med {
+        width: 40%;
+    }
+
+    .spotlight.style2.right,
+    .spotlight.style3.left {
+        /* background: transparent; */
+    }
+
 }
