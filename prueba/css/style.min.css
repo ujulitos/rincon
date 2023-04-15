@@ -216,6 +216,12 @@ a {
 
 /* mios */
 
+.wp1,
+.wp2,
+.wp3 {
+    opacity: 0;
+}
+
 .navbar-collapse,
 .collapse {
     text-align: right;
@@ -231,6 +237,52 @@ a {
     background: linear-gradient(to right, #fff7f200, #fff7f2a8, #fff7f200);
     margin-top: -100px;
     padding: 20px;
+}
+
+.fondo_fijo_izq,
+.fondo_fijo_der {
+    background-image: url(../img/img19.jpg);
+    background-position: center 50px;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 50%;
+    height: 150vh;
+}
+
+.fondo_fijo_der {
+    margin-left: 50%;
+}
+
+.fondo_izq {
+    width: 50%;
+    margin-top: -150vh;
+}
+
+.fondo_der {
+    width: 50%;
+    margin-left: 50%;
+    margin-top: -150vh;
+}
+
+.texto_izq,
+.texto_der {
+    padding-left: 50px;
+}
+
+.img_esc {
+    display: none;
+}
+
+.con_sombra {
+    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+}
+
+.tarjeta {
+    padding: 80px 30px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    /* width: 100%; */
 }
 
 .icono_color0 {
@@ -415,8 +467,12 @@ a {
     color: var(--color4);
 }
 
+.img_gde {
+    width: 90%;
+}
+
 .img_med {
-    width: 100%;
+    width: 80%;
 }
 
 .img_ch {
@@ -847,7 +903,7 @@ a {
 
 .spotlight.style2.right,
 .spotlight.style3.left {
-    background-image: url(../img/img01.jpg);
+    background-image: url(../img/img19.jpg);
     background-position: center 50px;
 }
 
@@ -1062,6 +1118,25 @@ footer {
     }
 }
 
+@media (max-width: 768px) {
+
+    .fondo_izq,
+    .fondo_der {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .img_esc {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #atencion2_ .img_esc {
+        margin-top: -100px;
+    }
+}
+
 @media (max-width: 992px) {
     #navbar-nav-header .navbar-nav {
         margin-top: 15px;
@@ -1087,6 +1162,12 @@ footer {
     .navbar-nav span {
         display: none;
     }
+
+    .tarjeta {
+        padding: 60px 20px;
+        width: 90%;
+    }
+
 }
 
 @media (max-width: 767px) {
@@ -1133,8 +1214,16 @@ footer {
         padding: 20px;
     }
 
+    .img_gde {
+        width: 80%;
+    }
+
     .img_med {
         width: 40%;
+    }
+
+    .img_ch {
+        width: 30%;
     }
 
     .spotlight.style2.right,
@@ -1142,4 +1231,12 @@ footer {
         /* background: transparent; */
     }
 
+    .tarjeta {
+        padding: 40px 20px;
+        width: 100%;
+    }
+
+    .col_fantasma {
+        display: none;
+    }
 }
