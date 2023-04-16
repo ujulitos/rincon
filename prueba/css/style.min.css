@@ -138,7 +138,6 @@ button:focus {
     outline: none;
 }
 
-.btn:hover,
 a:hover {
     text-decoration: none;
     color: #d05165;
@@ -220,6 +219,12 @@ a {
 .wp2,
 .wp3 {
     opacity: 0;
+}
+
+.liga {
+    color: var(--color2);
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .navbar-collapse,
@@ -493,9 +498,9 @@ a {
 }
 
 .btn:not(.btn-link):hover {
-    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
-    -webkit-transform: translateY(-1px);
-    transform: translateY(-1px);
+    /* box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08); */
+    /* -webkit-transform: translateY(-1px); */
+    /* transform: translateY(-1px); */
 }
 
 .btn-orange {
@@ -522,10 +527,38 @@ a {
     border: none !important;
 }
 
-.btn-green {
+.btn-color1:hover {
+    background-color: #da7782 !important;
+}
+
+.btn-color2 {
+    background-color: var(--color2) !important;
+    color: #fff !important;
+    border: none !important;
+}
+
+.btn-color2:hover {
+    background-color: #7f70a8 !important;
+}
+
+.btn-color3 {
+    background-color: var(--color3) !important;
+    color: #fff !important;
+    border: none !important;
+}
+
+.btn-color3:hover {
+    background-color: #5fa0c9 !important;
+}
+
+.btn-color4 {
     background-color: var(--color4) !important;
     color: #fff !important;
     border: none !important;
+}
+
+.btn-color4:hover {
+    background-color: #579c5c !important;
 }
 
 #gtco-header-navbar {
