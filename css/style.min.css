@@ -221,6 +221,30 @@ a {
     opacity: 0;
 }
 
+.fondo_azul {
+    font-size: 24px;
+    background-color: #597bb3c9;
+    padding: 10px;
+    color: #fff;
+    border-radius: 13px;
+}
+
+.fondo_naranja {
+    font-size: 24px;
+    background: linear-gradient(to right, #e78c44, #ec8181);
+    padding: 10px;
+    color: #fff;
+    border-radius: 13px;
+}
+
+.fondo_verde {
+    font-size: 24px;
+    background: linear-gradient(to right, #5faf4f, #87bac5);
+    padding: 10px;
+    color: #fff;
+    border-radius: 13px;
+}
+
 .liga {
     color: var(--color2);
     font-size: 16px;
