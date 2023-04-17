@@ -38,6 +38,10 @@ function abrirLiga(cualLiga) {
     window.open(cualLiga, '_blank');
 }
 
+function reload() {
+    location.reload();
+}
+
 function mandarMail() {
     window.open('mailto:elrinconterapeutico013@gmail.com?subject=&body=');
 }
