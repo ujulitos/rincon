@@ -42,7 +42,7 @@ function reload() {
 }
 
 function mandarMail() {
-    window.open('mailto:elrinconterapeutico013@gmail.com?subject=&body=');
+    window.open('mailto:hola@elrinconterapeutico.com?subject=&body=');
 }
 
 function abrirWApp() {
